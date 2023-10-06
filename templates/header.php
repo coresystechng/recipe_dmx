@@ -19,7 +19,12 @@
     </style>
 </head>
 <body>
-    <div class="green darken-4">
-    <h4 class="center-align white-text p-2x">Recipes.com</h4>
-    </div>
+    <nav class="green darken-4 white-text">
+        <div class="container">
+           <a href="index.php" class="brand-logo">Recipes.com </a>
+       </div>
+        <div class="container right-align">
+           <a href="add_recipe.php" class="btn white green-text text-darken-4">New Recipe</a>
+       </div>
+    </nav>
     <div class="container">

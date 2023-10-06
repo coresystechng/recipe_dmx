@@ -27,22 +27,31 @@ $studentNames = ['John', 'Stephen', 'Michael', 'Abigail'];
 
 //Associative Array
 
-$studentData = ['name' => 'John', 'age' => 16, 'schoolFees' => FALSE];
+$studentData = [
+    ['name' => 'John', 'age' => 16, 'schoolFees' => FALSE],
+    ['name' => 'Peter', 'age' => 15, 'schoolFees' => TRUE],
+    ['name' => 'Femi', 'age' => 17, 'schoolFees' => TRUE],
+    ['name' => 'Haruna', 'age' => 20, 'schoolFees' => FALSE]
+];
 // print_r($studentData);
 // echo $studentData['age'];
 
-//Multidiemensional Array
 
-$studentBioData = [
-                    ['name' => 'John', 'age' => 16, 'schoolFees' => 'no'],
-                    ['name' => 'Stephen', 'age' => 15, 'schoolFees' => 'yes'],
-                    ['name' => 'Michael', 'age' => 17, 'schoolFees' => 'no'],
-                    ['name' => 'Abigail', 'age' => 16, 'schoolFees' => 'no']
-];
 
-print_r($studentBioData);
 
-// print_r ($studentBioData[2]);
+//for Loop
 
-echo $studentBioData[2]['age'];
+
+for($reg_num=100; $reg_num < 1000; $reg_num+=70) {
+    // echo $reg_num . '</br>';
+}
+
+
+//foreach Loop
+foreach ($studentData as $student) {
+    echo 'Hello, my name is '.$student['name'] . 'of age ' .$student['age'] . ' </br>';
+}
+
+
+
 ?>
